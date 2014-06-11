@@ -4,8 +4,11 @@
 <head>
 	<title>Emplea.do - {% block title %} {% endblock title %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="{% static "wysihtml5/css/stylesheet.css" %}" rel="stylesheet">
+
 	<link href="{% static "bs/css/bootstrap.min.css" %}" rel="stylesheet">
 	<link href="{% static "bs/css/bootstrap.theme.min.css" %}" rel="stylesheet">
+	{% block external %} {% endblock external %}
 
 </head>
 <body>
